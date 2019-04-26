@@ -1,1 +1,15 @@
-# design-patterns-java
+## 单一职责原则 （SRP: Single Responsibility Principle）
+
+### 定义
+> 不要存在多于一个导致类变更的原因。单一职责原则规定一个类应该有且仅有一个引起它变化的原因，
+  否则类应该被拆分（There should never be more than one reason for a class to change）。
+
+
+> 一个类/接口/方法只负责一项职责
+
+### 优点
+降低类的复杂度、提高类的可读性，提高系统的可维护性、降低变更引起的风险
+
+###注意
+> 单一职责同样也适用于方法。一个方法应该尽可能做好一件事情。如果一个方法处理的事情太多，其颗粒度会变得很粗，
+  不利于重用。
