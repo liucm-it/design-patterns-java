@@ -5,8 +5,10 @@ public class ThreadSafeDoubleCheckLocking {
     private static volatile ThreadSafeDoubleCheckLocking instance;
 
     private ThreadSafeDoubleCheckLocking() {
-        if (instance != null) {
-            throw new IllegalStateException("Already initialized.");
+        if (instance == null) {
+            instance = this;
+        } else {
+            throw new IllegalThreadStateException("Already initialized.");
         }
     }
 
