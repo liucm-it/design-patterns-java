@@ -8,5 +8,13 @@
     <artifactId>design-patterns-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+    <dependencies>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.5</version>
+        </dependency>
+    </dependencies>
 
 </project>
